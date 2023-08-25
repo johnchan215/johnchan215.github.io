@@ -1,0 +1,32 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bi {
+  font-size: 1.5rem;
+  color: var(--bs-body-color);
+}
+
+.bi-linkedin {
+  font-size: 1.3rem
+}
+
+.bi:hover {
+  color: var(--bs-secondary-color);
+}
+
+.work-img {
+  background-color: #a2a2a2;
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* #Media
+================================================== */
+@media (min-width: 992px) {
+  .container-md {
+    max-width: 800px;
+  }
+}
