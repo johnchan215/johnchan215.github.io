@@ -3,12 +3,11 @@ function setTheme(theme) {
     if (theme === 'dark') {
         document.getElementById('color-icon').className = "bi bi-moon-stars-fill";
     } else {
-        document.getElementById('color-icon').className = "bi bi-sun";
+        document.getElementById('color-icon').className = "bi bi-sun-fill";
     }
 }
 
 function toggleTheme() {
-    let theme = localStorage.getItem("theme");
     if (theme === 'dark') {
         theme = 'light';
     } else {
@@ -18,7 +17,7 @@ function toggleTheme() {
     localStorage.setItem("theme", theme);
 }
 
-document.getElementById('color-toggle').addEventListener('click', toggleTheme);
-
 let theme = localStorage.getItem("theme");
+
+document.getElementById('color-toggle').addEventListener('click', toggleTheme);
 setTheme(theme);
