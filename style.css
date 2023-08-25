@@ -2,17 +2,17 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.bi {
+.social-links .bi {
   font-size: 1.5rem;
   color: var(--bs-body-color);
 }
 
-.bi-linkedin {
-  font-size: 1.3rem
+.social-links .bi:hover {
+  color: var(--bs-warning);
 }
 
-.bi:hover {
-  color: var(--bs-secondary-color);
+#color-icon {
+  color: var(--bs-warning);
 }
 
 .work-img {
