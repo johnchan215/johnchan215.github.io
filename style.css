@@ -14,7 +14,8 @@ article a {
   position: relative;
 }
 
-article a:hover {
+article a:hover,
+article a:focus {
   color: var(--bs-dark);
   transition: all .3s ease-in-out;
 }
@@ -31,7 +32,8 @@ article a::after {
   transition: all .3s ease-in-out;
 }
 
-article a:hover::after {
+article a:hover::after,
+article a:focus::after {
   bottom: 0;
   height: 100%;
 }
