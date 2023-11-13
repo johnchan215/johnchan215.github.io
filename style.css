@@ -40,7 +40,8 @@ article a:focus::after {
 
 video {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .social-links .bi {
@@ -56,18 +57,6 @@ video {
   color: var(--bs-warning);
 }
 
-.work-img {
-  background-color: #a2a2a2;
-  height: 180px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-/* #Media
-================================================== */
-@media (min-width: 992px) {
-  .container-md {
+.container-md {
     max-width: 800px;
-  }
 }
