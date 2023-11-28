@@ -29,7 +29,7 @@ cards.forEach((card, i) => {
     // Code to be executed on non-mobile devices
   } else {
     // Stop video when desktop leaves card element
-    card.addEventListener('mouseleave', () => {
+    card.addEventListener('touchend', () => {
       videos.forEach(video => {
         video.pause();
         video.currentTime = 0;
