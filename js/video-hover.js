@@ -3,6 +3,7 @@ const cards = document.querySelectorAll(".projects");
 
 cards.forEach((card, i) => {
 
+  videos[i].pause();
   // Play video 2x speed
   videos[i].playbackRate = 2;
 
