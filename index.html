@@ -1,181 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Johnny Chan</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Styling -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Johnny Chan</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- Styling -->
-  <link rel="stylesheet" href="./style.css">
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- Favicon -->
-  <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-sm">
-    <div class="container-md">
-      <a class="navbar-brand" href="./">Johnny Chan</a>
-      <!-- toggle button for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- navbar links -->
-      <div class="collapse navbar-collapse justify-content-end" id="main-nav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Johnny_Chan_CV.pdf">Resume</a>
-          </li>
-          <li class="nav-item">
-            <span id="color-toggle" class="nav-link" role="button"><i id="color-icon" class="bi bi-sun-fill"></i></span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Intro -->
-  <header id="hero" class="py-5 bg-body-tertiary">
-    <div class="container-md">
-      <div class="row">
-        <div class="col-sm-4 order-sm-last offset-sm-2">
-          <img class="headshot img-fluid mx-auto d-block rounded-5" src="./assets/img/headshot.jpg"
-            title="picture of myself" width="260px">
-        </div>
-        <div class="col-sm-6 order-sm-first my-4 justify-content-center align-self-center">
-          <h1>Hi, Johnny here 👋</h1>
-          <p>I'm a Web Developer and a Computer Science graduate at Aberystwyth Univeristy. Shaper of screens to fit on
-            the palm of your hands.</p>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/jc-20/" target="_blank" class="text-decoration-none">
-              <i class="bi bi-linkedin me-4"></i>
-            </a>
-            <a href="mailto:jchan2096@gmail.com" target="_blank" class="text-decoration-none">
-              <i class="bi bi-envelope-fill me-4"></i>
-            </a>
-            <a href="https://github.com/johnchan215/" target="_blank" class="text-decoration-none">
-              <i class="bi bi-github"></i>
-            </a>
-          </div>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-md">
+        <a class="navbar-brand" href="./">Johnny Chan</a>
+        <!-- toggle button for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Johnny_Chan_CV.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+              <span id="color-toggle" class="nav-link" role="button"
+                ><i id="color-icon" class="bi bi-sun-fill"></i
+              ></span>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </header>
-  <!-- Check out my work -->
-  <section id="work" class="container-md">
-    <h2 class="text-center py-5">Check out my work!</h2>
-    <!-- Oi Website -->
-    <a class="text-decoration-none projects" href="./projects/otto_international.html">
-      <div class="card mb-3 bg-body-tertiary rounded-0">
-        <div class="row g-0">
-          <div class="col-sm-5">
-            <video autoplay loop muted disablePictureInPicture playsinline preload="metadata">
-              <source src="./assets/video/Otto_International_Frontend.mp4" type="video/mp4">
-            </video>
+    </nav>
+    <!-- Intro -->
+    <header id="hero" class="py-5 bg-body-tertiary">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-sm-4 order-sm-last offset-sm-2">
+            <img
+              class="headshot img-fluid mx-auto d-block rounded-5"
+              src="./assets/img/headshot.jpg"
+              title="picture of myself"
+              width="260px"
+            />
           </div>
-          <div class="col-sm-7">
-            <div class="card-body">
-              <h5 class="card-title">Otto International Website</h5>
-              <p class="card-text"><small class="card-text text-body-secondary">Elementor • HTML • CSS • JS</small></p>
-              <p class="card-text">Redesigning the public-facing website for Otto International based on WordPress.</p>
+          <div
+            class="col-sm-6 order-sm-first my-4 justify-content-center align-self-center"
+          >
+            <h1>Hi, Johnny here 👋</h1>
+            <p>
+              I'm a Web Developer and a Computer Science graduate at Aberystwyth
+              Univeristy. Shaper of screens to fit on the palm of your hands.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/jc-20/"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <i class="bi bi-linkedin me-4"></i>
+              </a>
+              <a
+                href="mailto:jchan2096@gmail.com"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <i class="bi bi-envelope-fill me-4"></i>
+              </a>
+              <a
+                href="https://github.com/johnchan215/"
+                target="_blank"
+                class="text-decoration-none"
+              >
+                <i class="bi bi-github"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </a>
-    <!-- MyLearning -->
-    <a class="text-decoration-none projects" href="./projects/mylearning.html">
-      <div class="card mb-3 bg-body-tertiary rounded-0">
-        <div class="row g-0">
-          <div class="col-sm-5">
-            <video autoplay loop muted disablePictureInPicture playsinline preload="metadata">
-              <source src="./assets/video/MyLearning-2022.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-sm-7">
-            <div class="card-body">
-              <h5 class="card-title">MyLearning</h5>
-              <p class="card-text"><small class="text-body-secondary">Elementor • HTML • CSS • JS</small></p>
-              <p class="card-text">Redesigning and implementing an internal E-learning platform based on WordPress.</p>
+    </header>
+    <!-- Check out my work -->
+    <section id="work" class="container-md">
+      <h2 class="text-center py-5">Check out my work!</h2>
+      <!-- Oi Website -->
+      <a
+        class="text-decoration-none projects"
+        href="./projects/otto_international.html"
+      >
+        <div class="card mb-3 bg-body-tertiary rounded-0">
+          <div class="row g-0">
+            <div class="col-sm-5">
+              <video
+                autoplay
+                loop
+                muted
+                disablePictureInPicture
+                playsinline
+                preload="metadata"
+              >
+                <source
+                  src="./assets/video/Otto_International_Frontend.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="col-sm-7">
+              <div class="card-body">
+                <h5 class="card-title">Otto International Website</h5>
+                <p class="card-text">
+                  <small class="card-text text-body-secondary"
+                    >Elementor • HTML • CSS • JS</small
+                  >
+                </p>
+                <p class="card-text">
+                  Redesigning the public-facing website for Otto International
+                  based on WordPress.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
-    <!-- Staffhub -->
-    <a class="text-decoration-none projects" href="./projects/staffhub.html">
-      <div class="card mb-3 bg-body-tertiary rounded-0">
-        <div class="row g-0">
-          <div class="col-sm-5">
-            <video autoplay loop muted disablePictureInPicture playsinline preload="metadata">
-              <source src="./assets/video/Staffhub_Performance_Demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="col-sm-7">
-            <div class="card-body">
-              <h5 class="card-title">Staffhub (HRIS System)</h5>
-              <p class="card-text"><small class="text-body-secondary">HTML • CSS • JS • SQL</small></p>
-              <p class="card-text">Implementing enhancements to modules on a system based on the .NET framework.</p>
+      </a>
+      <!-- MyLearning -->
+      <a
+        class="text-decoration-none projects"
+        href="./projects/mylearning.html"
+      >
+        <div class="card mb-3 bg-body-tertiary rounded-0">
+          <div class="row g-0">
+            <div class="col-sm-5">
+              <video
+                autoplay
+                loop
+                muted
+                disablePictureInPicture
+                playsinline
+                preload="metadata"
+              >
+                <source
+                  src="./assets/video/MyLearning-2022.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="col-sm-7">
+              <div class="card-body">
+                <h5 class="card-title">MyLearning</h5>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Elementor • HTML • CSS • JS</small
+                  >
+                </p>
+                <p class="card-text">
+                  Redesigning and implementing an internal E-learning platform
+                  based on WordPress.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </a>
-  </section>
-  <div class="container-md my-5">
-    <div class="row justify-content-center text-center">
-      <div class="col-5">
-        <a class="btn btn-warning" href="/work" role="button">My full profile</a>
-      </div>
-      <div class="col-5">
-        <a class="btn btn-warning" href="/Johnny_Chan_CV.pdf" role="button">Resume / CV</a>
+      </a>
+      <!-- Staffhub -->
+      <a class="text-decoration-none projects" href="./projects/staffhub.html">
+        <div class="card mb-3 bg-body-tertiary rounded-0">
+          <div class="row g-0">
+            <div class="col-sm-5">
+              <video
+                autoplay
+                loop
+                muted
+                disablePictureInPicture
+                playsinline
+                preload="metadata"
+              >
+                <source
+                  src="./assets/video/Staffhub_Performance_Demo.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="col-sm-7">
+              <div class="card-body">
+                <h5 class="card-title">Staffhub (HRIS System)</h5>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >HTML • CSS • JS • SQL</small
+                  >
+                </p>
+                <p class="card-text">
+                  Implementing enhancements to modules on a system based on the
+                  .NET framework.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </section>
+    <div class="container-md my-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-5">
+          <a class="btn btn-warning" href="/work" role="button"
+            >My full profile</a
+          >
+        </div>
+        <div class="col-5">
+          <a class="btn btn-warning" href="/Johnny_Chan_CV.pdf" role="button"
+            >Resume / CV</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Footer -->
-  <footer class="container-md text-center my-5">
-    <hr class="solid pt-3">
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/jc-20/" target="_blank" class="text-decoration-none">
-        <i class="bi bi-linkedin me-4"></i>
-      </a>
-      <a href="mailto:jchan2096@gmail.com" target="_blank" class="text-decoration-none">
-        <i class="bi bi-envelope-fill me-4"></i>
-      </a>
-      <a href="https://github.com/johnchan215/" target="_blank" class="text-decoration-none">
-        <i class="bi bi-github"></i>
-      </a>
-    </div>
-    <p class="pt-4">
-      <small>
-        &copy; Made by Johnny Chan
-      </small>
-    </p>
-  </footer>
-  <script src="./js/color-theme.js"></script>
-  <script src="./js/video-hover.js"></script>
-  <!-- Boostrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Footer -->
+    <footer class="container-md text-center my-5">
+      <hr class="solid pt-3" />
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/jc-20/"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-linkedin me-4"></i>
+        </a>
+        <a
+          href="mailto:jchan2096@gmail.com"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-envelope-fill me-4"></i>
+        </a>
+        <a
+          href="https://github.com/johnchan215/"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <p class="pt-4">
+        <small> &copy; Made by Johnny Chan </small>
+      </p>
+    </footer>
+    <script src="./js/color-theme.js"></script>
+    <script src="./js/video-hover.js"></script>
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

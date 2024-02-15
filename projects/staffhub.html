@@ -1,201 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Johnny Chan - Staffhub</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Styling -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Johnny Chan - Staffhub</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- Styling -->
-  <link rel="stylesheet" href="../style.css">
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- Favicon -->
-  <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-sm">
-    <div class="container-md">
-      <a class="navbar-brand" href="../">Johnny Chan</a>
-      <!-- toggle button for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- navbar links -->
-      <div class="collapse navbar-collapse justify-content-end" id="main-nav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="../about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Johnny_Chan_CV.pdf">Resume</a>
-          </li>
-          <li class="nav-item">
-            <span id="color-toggle" class="nav-link" role="button"><i id="color-icon" class="bi bi-sun-fill"></i></span>
-          </li>
-        </ul>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-md">
+        <a class="navbar-brand" href="../">Johnny Chan</a>
+        <!-- toggle button for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Johnny_Chan_CV.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+              <span id="color-toggle" class="nav-link" role="button"
+                ><i id="color-icon" class="bi bi-sun-fill"></i
+              ></span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Intro -->
-  <div id="hero" class="py-2 bg-body-tertiary">
-    <div class="container-md">
-      <div class="row">
-        <div class="col-sm order-sm-first my-4 justify-content-center align-self-center">
-          <h1 class="text-center">Staffhub</h1>
-          <h6 class="text-center">HTML • CSS • JS • SQL</h6>
+    </nav>
+    <!-- Intro -->
+    <div id="hero" class="py-2 bg-body-tertiary">
+      <div class="container-md">
+        <div class="row">
+          <div
+            class="col-sm order-sm-first my-4 justify-content-center align-self-center"
+          >
+            <h1 class="text-center">Staffhub</h1>
+            <h6 class="text-center">HTML • CSS • JS • SQL</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Main -->
-  <article class="container-md">
-    <section>
-      <h2 class="py-4">Overview</h2>
-      <p>Staffhub is a cloud HRIS software from Otto International (Oi) with core HR functions, recruitment,
-        training,payroll, etc. My part of the project was to enhance the performance and remuneration modules. This
-        project was built and supported over <a href="https://www.employeeconnect.com/" target="_blank"
-          rel="noreferrer">EmployeeConnect's (EC) HRIS software</a>. Additionally, updating Staffhub's theme to the
-        company's brand colours was also my role as the public facing website of Oi was a project I worked on.</p>
-      <p>The frontend was developed with HTML/CSS, JavaScript, Visual Basic (.NET), and ASP.NET, with the backend using
-        Microsoft IIS and MS SQL.</p>
-    </section>
-    <section>
-      <h2 class="py-4">Challenges</h2>
-      <p>As Staffhub was meant to be used regularly by many of the users in Oi, I had to ensure the features added to
-        the performance and remuneration modules would not jeopardise the core HR functions. Walking into this solo with
-        HR behind my back with requirements and deadlines as well as grasping the unfamiliar .NET technology has given
-        me lots of pressure to make this work. This project required me to prioritise tasks, liaise with stakeholders on
-        tasks during the timeframe, and utilise online resources to better understand the tech.</p>
-    </section>
-    <section>
-      <h2 class="py-4">Components</h2>
-      <h4>Front-End</h4>
-      <p>With the recent rebranding of Oi, changes to the theme were needed.</p>
-      <figure class="row">
-        <figure class="col-sm">
-          <img src="../assets/img/Staffhub_Home_2020.jpeg" alt="Staffhub in 2020" class="border">
-          <figcaption class="text-center"><small>Staffhub 2020</small></figcaption>
+    <!-- Main -->
+    <article class="container-md">
+      <section>
+        <h2 class="py-4">Overview</h2>
+        <p>
+          Staffhub is a cloud HRIS software from Otto International (Oi) with
+          core HR functions, recruitment, training,payroll, etc. My part of the
+          project was to enhance the performance and remuneration modules. This
+          project was built and supported over
+          <a
+            href="https://www.employeeconnect.com/"
+            target="_blank"
+            rel="noreferrer"
+            >EmployeeConnect's (EC) HRIS software</a
+          >. Additionally, updating Staffhub's theme to the company's brand
+          colours was also my role as the public facing website of Oi was a
+          project I worked on.
+        </p>
+        <p>
+          The frontend was developed with HTML/CSS, JavaScript, Visual Basic
+          (.NET), and ASP.NET, with the backend using Microsoft IIS and MS SQL.
+        </p>
+      </section>
+      <section>
+        <h2 class="py-4">Challenges</h2>
+        <p>
+          As Staffhub was meant to be used regularly by many of the users in Oi,
+          I had to ensure the features added to the performance and remuneration
+          modules would not jeopardise the core HR functions. Walking into this
+          solo with HR behind my back with requirements and deadlines as well as
+          grasping the unfamiliar .NET technology has given me lots of pressure
+          to make this work. This project required me to prioritise tasks,
+          liaise with stakeholders on tasks during the timeframe, and utilise
+          online resources to better understand the tech.
+        </p>
+      </section>
+      <section>
+        <h2 class="py-4">Components</h2>
+        <h4>Front-End</h4>
+        <p>
+          With the recent rebranding of Oi, changes to the theme were needed.
+        </p>
+        <figure class="row">
+          <figure class="col-sm">
+            <img
+              src="../assets/img/Staffhub_Home_2020.jpeg"
+              alt="Staffhub in 2020"
+              class="border"
+            />
+            <figcaption class="text-center">
+              <small>Staffhub 2020</small>
+            </figcaption>
+          </figure>
+          <figure class="col-sm">
+            <img
+              src="../assets/img/Staffhub_Home_2023.jpeg"
+              alt="Staffhub in 2023"
+              class="border"
+            />
+            <figcaption class="text-center">
+              <small>Staffhub 2023</small>
+            </figcaption>
+          </figure>
         </figure>
-        <figure class="col-sm">
-          <img src="../assets/img/Staffhub_Home_2023.jpeg" alt="Staffhub in 2023" class="border">
-          <figcaption class="text-center"><small>Staffhub 2023</small></figcaption>
+        <h4>Performance Module</h4>
+        <p>
+          Before a performance period starts, HR will start to create a review
+          template for the review period. This includes adding participants that
+          need to be evaluated and creating metrics for what the participant
+          should be evaluated on. Once the performance review begins, the 2
+          types of users involved are: participant and evaluator. The evaluator
+          can add ratings, weightings, and comments to metrics while the
+          participant can only add comments to their metrics.
+        </p>
+        <p>
+          What EC provides in their performance module is a
+          <a
+            href="https://www.employeeconnect.com/employee-performance/"
+            target="_blank"
+            rel="noreferrer"
+            >simplified system</a
+          >
+          that should work with many other companies' requirements. Luckily that
+          is the case with us here and most of the features added are quality of
+          life changes.
+        </p>
+        <p>
+          The performance module has gone through 3 phases where each phase
+          starts a month before the performance period:
+        </p>
+        <ul>
+          <li>Phase 1 (Essentials)</li>
+          <ul>
+            <li>Automatic performance calculation.</li>
+            <li>Show, hide, and change items.</li>
+            <li>Convert performance results to performance descriptions.</li>
+          </ul>
+          <li>Phase 2 (QoL Changes)</li>
+          <ul>
+            <li>Making fields required.</li>
+            <li>Limit total weighting.</li>
+            <li>Create custom page reports for HR to view results clearer.</li>
+          </ul>
+          <li>Phase 3 (HR Strategy Change)</li>
+          <ul>
+            <li>Create a library of goals for managers to set goals.</li>
+          </ul>
+        </ul>
+        <figure>
+          <video
+            loop
+            autoplay
+            muted
+            disablePictureInPicture
+            playsinline
+            class="border"
+          >
+            <source
+              src="../assets/video/Staffhub_Performance_Demo.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <figcaption class="text-center">
+            <small>Staffhub Performance Demo</small>
+          </figcaption>
         </figure>
-      </figure>
-      <h4>Performance Module</h4>
-      <p>Before a performance period starts, HR will start to create a review template for the review period. This
-        includes adding participants that need to be evaluated and creating metrics for what the participant should be
-        evaluated on. Once the performance review begins, the 2 types of users involved are: participant and evaluator.
-        The evaluator can add ratings, weightings, and comments to metrics while the participant can only add comments
-        to their metrics.</p>
-      <p>What EC provides in their performance module is a <a
-          href="https://www.employeeconnect.com/employee-performance/" target="_blank" rel="noreferrer">simplified
-          system</a> that should work with many other companies' requirements. Luckily that is the case with us here and
-        most of the features added are quality of life changes.
+        <h4>Remuneration Module</h4>
+        <p>
+          Like the performance module, HR will start to prepare the review
+          worksheet a couple months before the r eview period. This includes
+          adding participants , checking the salary data is correct, and writing
+          dow n notes for evaluators. Once the review period starts, the
+          workflow would start off with the evaluator inputting their team
+          members salary increment which is then followed by two approvers that
+          are the evaluator's manager and the head of the profit centre.
+        </p>
+        <p>
+          EC has
+          <a
+            href="https://www.employeeconnect.com/hris-remuneration/"
+            target="_blank"
+            rel="noreferrer"
+            >provided a skeleton</a
+          >
+          of a remuneration module during a review period. For phase 1, other
+          than HR's requirements, t he main feature lacking was the process
+          after the review period. This was tackled by allowing HR to push the
+          newly approved salaries to the salary table for payroll to pick up
+          when needed. For the employees, a page was created f or employees to
+          view their salary letter. The following changes were quality of life
+          changes as o bserved during phase 1.
+        </p>
+        <p>
+          The remuneration module has gone through 2 phases where each phase
+          starts a few months before the salary review period:
+        </p>
+        <ul>
+          <li>Phase 1 (Essentials)</li>
+          <ul>
+            <li>
+              Automatic recommended salary and bonus based on year of service,
+              employee performance, and business performance.
+            </li>
+            <li>Add an additional approval process for CO's and Directors.</li>
+            <li>Push the new salary for payroll to be ready to use.</li>
+            <li>A page for employees to view their salary letter.</li>
+          </ul>
+          <li>Phase 2 (QoL Changes)</li>
+          <ul>
+            <li>Dynamic total values.</li>
+            <li>Freezing first row and column headers.</li>
+          </ul>
+        </ul>
+        <figure>
+          <video
+            loop
+            autoplay
+            muted
+            disablePictureInPicture
+            playsinline
+            class="border"
+          >
+            <source
+              src="../assets/video/Staffhub_Remuneration_Demo.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <figcaption class="text-center">
+            <small>Staffhub Remuneration Demo</small>
+          </figcaption>
+        </figure>
+      </section>
+    </article>
+    <!-- Footer -->
+    <footer class="container-md text-center my-5">
+      <hr class="solid pt-3" />
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/jc-20/"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-linkedin me-4"></i>
+        </a>
+        <a
+          href="mailto:jchan2096@gmail.com"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-envelope-fill me-4"></i>
+        </a>
+        <a
+          href="https://github.com/johnchan215/"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <p class="pt-4">
+        <small> &copy; Made by Johnny Chan </small>
       </p>
-      <p>The performance module has gone through 3 phases where each phase starts a month before the performance period:
-      </p>
-      <ul>
-        <li>Phase 1 (Essentials)</li>
-        <ul>
-          <li>Automatic performance calculation.</li>
-          <li>Show, hide, and change items.</li>
-          <li>Convert performance results to performance descriptions.</li>
-        </ul>
-        <li>Phase 2 (QoL Changes)</li>
-        <ul>
-          <li>Making fields required.</li>
-          <li>Limit total weighting.</li>
-          <li>Create custom page reports for HR to view results clearer.</li>
-        </ul>
-        <li>Phase 3 (HR Strategy Change)</li>
-        <ul>
-          <li>Create a library of goals for managers to set goals.</li>
-        </ul>
-      </ul>
-      <figure>
-        <video loop autoplay muted disablePictureInPicture playsinline class="border">
-          <source src="../assets/video/Staffhub_Performance_Demo.mp4" type="video/mp4">
-        </video>
-        <figcaption class="text-center"><small>Staffhub Performance Demo</small></figcaption>
-      </figure>
-      <h4>Remuneration Module</h4>
-      <p>Like the performance module, HR will start to prepare the review worksheet a couple months before the review
-        period. This includes adding participants, checking the salary data is correct, and writing down notes for
-        evaluators. Once the review period starts, the workflow would start off with the evaluator inputting their team
-        members salary increment which is then followed by two approvers that are the evaluator's manager and the head
-        of the profit centre.</p>
-      <p>EC has <a href="https://www.employeeconnect.com/hris-remuneration/" target="_blank" rel="noreferrer">provided a
-          skeleton</a> of a remuneration module during a review period. For phase 1, other than HR's requirements, the
-        main feature lacking was the process after the review period. This was tackled by allowing HR to push the newly
-        approved salaries to the salary table for payroll to pick up when needed. For the employees, a page was created
-        for employees to view their salary letter. The following changes were quality of life changes as observed during
-        phase 1.</p>
-      <p>The remuneration module has gone through 2 phases where each phase starts a few months before the salary review
-        period:</p>
-      <ul>
-        <li>Phase 1 (Essentials)</li>
-        <ul>
-          <li>Automatic recommended salary and bonus based on year of service, employee performance, and business
-            performance.</li>
-          <li>Add an additional approval process for CO's and Directors.</li>
-          <li>Push the new salary for payroll to be ready to use.</li>
-          <li>A page for employees to view their salary letter.</li>
-        </ul>
-        <li>Phase 2 (QoL Changes)</li>
-        <ul>
-          <li>Dynamic total values.</li>
-          <li>Freezing first row and column headers.</li>
-        </ul>
-      </ul>
-      <figure>
-        <video loop autoplay muted disablePictureInPicture playsinline class="border">
-          <source src="../assets/video/Staffhub_Remuneration_Demo.mp4" type="video/mp4">
-        </video>
-        <figcaption class="text-center"><small>Staffhub Remuneration Demo</small></figcaption>
-      </figure>
-    </section>
-  </article>
-  <!-- Footer -->
-  <footer class="container-md text-center my-5">
-    <hr class="solid pt-3">
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/jc-20/" target="_blank" class="text-decoration-none">
-        <i class="bi bi-linkedin me-4"></i>
-      </a>
-      <a href="mailto:jchan2096@gmail.com" target="_blank" class="text-decoration-none">
-        <i class="bi bi-envelope-fill me-4"></i>
-      </a>
-      <a href="https://github.com/johnchan215/" target="_blank" class="text-decoration-none">
-        <i class="bi bi-github"></i>
-      </a>
-    </div>
-    <p class="pt-4">
-      <small>
-        &copy; Made by Johnny Chan
-      </small>
-    </p>
-  </footer>
-  <script src="../js/color-theme.js"></script>
-  <!-- Boostrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script src="../js/color-theme.js"></script>
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

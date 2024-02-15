@@ -1,167 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Johnny Chan - Otto International</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Styling -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Johnny Chan - Otto International</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <!-- Styling -->
-  <link rel="stylesheet" href="../style.css">
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <!-- Favicon -->
-  <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-sm">
-    <div class="container-md">
-      <a class="navbar-brand" href="../">Johnny Chan</a>
-      <!-- toggle button for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- navbar links -->
-      <div class="collapse navbar-collapse justify-content-end" id="main-nav">
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" href="../about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Johnny_Chan_CV.pdf">Resume</a>
-          </li>
-          <li class="nav-item">
-            <span id="color-toggle" class="nav-link" role="button"><i id="color-icon" class="bi bi-sun-fill"></i></span>
-          </li>
-        </ul>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-md">
+        <a class="navbar-brand" href="../">Johnny Chan</a>
+        <!-- toggle button for mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Johnny_Chan_CV.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+              <span id="color-toggle" class="nav-link" role="button"
+                ><i id="color-icon" class="bi bi-sun-fill"></i
+              ></span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Intro -->
-  <div id="hero" class="py-2 bg-body-tertiary">
-    <div class="container-md">
-      <div class="row">
-        <div class="col-sm order-sm-first my-4 justify-content-center align-self-center">
-          <h1 class="text-center">Otto International</h1>
-          <h6 class="text-center">Elementor • HTML • CSS • JS</h6>
+    </nav>
+    <!-- Intro -->
+    <div id="hero" class="py-2 bg-body-tertiary">
+      <div class="container-md">
+        <div class="row">
+          <div
+            class="col-sm order-sm-first my-4 justify-content-center align-self-center"
+          >
+            <h1 class="text-center">Otto International</h1>
+            <h6 class="text-center">Elementor • HTML • CSS • JS</h6>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Main -->
-  <article class="container-md">
-    <section>
-      <h2 class="py-4">Overview</h2>
-      <p>As Otto International (Oi) <a href="https:ottoint.com/our-rebranding-1264/" target="_blank"
-          rel="noreferrer">rebranded</a> out from Hermes Europe in 2019, there was a need to create a new public facing
-        website to attract new vendors, customers, and hiring prospects. Undertaking this project as the sole developer,
-        I collaborated closely with a designer to curate engaging content. With Human Resources and the Communications
-        team being the stakeholders of this project, the primary requirements were to create a front facing website that
-        allows our Communications team to periodically release key updates as well as a place for potential hiring
-        candidates to learn more about the company's culture. WordPress (WP) was used as our Content Management System
-        (CMS) since it has proven to be an efficient tool to tackle the given requirements.</p>
-      <figure>
-        <video loop autoplay muted disablePictureInPicture playsinline class="border">
-          <source src="../assets/video/Otto_International_Frontend.mp4" type="video/mp4">
-        </video>
-        <figcaption class="text-center"><small>Otto International 2023</small></figcaption>
-      </figure>
-    </section>
-    <section>
-      <h2 class="py-4">Components</h2>
-      <h4>Front-End</h4>
-      <p>The design style that resonated with the designer and me was a dynamic responsive box design. Dynamic to make
-        the content more engaging, responsive to fit on all screen sizes, and box for the cleaner look. With this design
-        in mind, we started on a rough wireframe which can be found under this section. A featured image placed on the
-        top of each page was also included to attract visitors with a personalized feel to the subject of the page.</p>
-      <p>Like <a href="./mylearning.html" target="_blank">MyLearning</a>, I have adopted Elementor for this project
-        although it was the first time using <a href="https://elementor.com/" target="_blank"
-          rel="noreferrer">Elementor</a>. With my previous knowledge of web design, transferring my skills to Elementor
-        was not very difficult. Even with the tight deadline, the abundance of widgets to choose from has accelerated
-        the implementation process.</p>
-      <figure class="my-4 justify-content-center text-center">
-        <a class="btn btn-warning" target="_blank" href="../assets/img/Otto_International_Wireframes.pdf"
-          role="button">Otto International Wireframes</a>
-      </figure>
-      <h4>Job Opening</h4>
-      <p>To fulfill the requirement of a place for potential hiring candidates to learn more about the company's
-        culture, a careers page has been created which also incorporates a job opening section that works together with
-        the company's LinkedIn. Discussing with the HR stakeholder, we decided to use the plugin <a
-          href="https://wpjobopenings.com/" target="_blank" rel="noreferrer">WP Job Openings</a>. It contains all the
-        necessary features we needed as well as being developer friendly which helped in creating some custom metadata
-        on the job openings. Since the Career page and job openings section, they have become the most viewed pages
-        after the homepage plus it has also job openings more official as they are hosted on the company website.</p>
-      <figure>
-        <img src="../assets/img/Otto_International_Job_Openings.png" alt="Otto International job openings page"
-          class="border">
-        <figcaption class="text-center"><small>Otto International Job Openings Page</small></figcaption>
-      </figure>
-      <h4>SEO</h4>
-      <p>Being the public facing website for Otto International, SEO is important for user acquisition. With the use of
-        <a href="https://rankmath.com/" target="_blank" rel="noreferrer">Rank Math</a> and integrating it with Google
-        Search Console and Google Analytics, it has made it easy to optimize, customise, and control SEO. All posts and
-        pages are curated with keywords, job openings have been included to the sitemap to be indexed by search engines,
-        and tags have been added to the page's call to action to have a better overview of user engagement. When
-        majority of Direct traffic comes from face-to-face meetings with customers and no follow links from the
-        Intranet, Organic Search comes up as the second-best source of traffic with a 54% difference compared to Direct
-        traffic.</p>
-      <h4>Newsletter</h4>
-      <p>A place for the Communications team to periodically releasing key updates is another important requirement for
-        the public facing website. Making good use of WP's posts, releasing “articles” is the foundation of WP as it was
-        originally built as a blogger website. With Elementor, these posts can follow a template to keep all posts to
-        look the same. With the native feature of posts in WP and Elementor's template feature, we have a newsroom. Now
-        comes the question on how we can let our customers or candidates know of new company updates. As the
-        Communications team already has a subscription to <a href="https://mailchimp.com/" target="_blank"
-          rel="noreferrer">MailChimp</a>, it has been decided to use MailChimp for monthly newsletters. As every WP site
-        has an RSS feed, we can feed the site's RSS feed to MailChimp to easily fetch the main content and images which
-        is essentially what is needed for any newsletter.</p>
-      <figure class="mx-auto d-block" style="max-width:600px;">
-        <img src="../assets/img/Otto_International_Newsletter.png" alt="Otto International newsletter email"
-          class="border">
-        <figcaption class="text-center"><small>Otto International Newsletter</small></figcaption>
-      </figure>
-    </section>
-  </article>
-  <!-- Footer -->
-  <footer class="container-md text-center my-5">
-    <hr class="solid pt-3">
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/jc-20/" target="_blank" class="text-decoration-none">
-        <i class="bi bi-linkedin me-4"></i>
-      </a>
-      <a href="mailto:jchan2096@gmail.com" target="_blank" class="text-decoration-none">
-        <i class="bi bi-envelope-fill me-4"></i>
-      </a>
-      <a href="https://github.com/johnchan215/" target="_blank" class="text-decoration-none">
-        <i class="bi bi-github"></i>
-      </a>
-    </div>
-    <p class="pt-4">
-      <small>
-        &copy; Made by Johnny Chan
-      </small>
-    </p>
-  </footer>
-  <script src="../js/color-theme.js"></script>
-  <!-- Boostrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Main -->
+    <article class="container-md">
+      <section>
+        <h2 class="py-4">Overview</h2>
+        <p>
+          As Otto International (Oi)
+          <a
+            href="https:ottoint.com/our-rebranding-1264/"
+            target="_blank"
+            rel="noreferrer"
+            >rebranded</a
+          >
+          out from Hermes Europe in 2019, there was a need to create a new
+          public facing website to attract new vendors, customers, and hiring
+          prospects. Undertaking this project as the sole developer, I
+          collaborated closely with a designer to curate engaging content. With
+          Human Resources and the Communications team being the stakeholders of
+          this project, the primary requirements were to create a front facing
+          website that allows our Communications team to periodically release
+          key updates as well as a place for potential hiring candidates to
+          learn more about the company's culture. WordPress (WP) was used as our
+          Content Management System (CMS) since it has proven to be an efficient
+          tool to tackle the given requirements.
+        </p>
+        <figure>
+          <video
+            loop
+            autoplay
+            muted
+            disablePictureInPicture
+            playsinline
+            class="border"
+          >
+            <source
+              src="../assets/video/Otto_International_Frontend.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <figcaption class="text-center">
+            <small>Otto International 2023</small>
+          </figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2 class="py-4">Components</h2>
+        <h4>Front-End</h4>
+        <p>
+          The design style that resonated with the designer and me was a dynamic
+          responsive box design. Dynamic to make the content more engaging,
+          responsive to fit on all screen sizes, and box for the cleaner look.
+          With this design in mind, we started on a rough wireframe which can be
+          found under this section. A featured image placed on the top of each
+          page was also included to attract visitors with a personalized feel to
+          the subject of the page.
+        </p>
+        <p>
+          Like <a href="./mylearning.html" target="_blank">MyLearning</a>, I
+          have adopted Elementor for this project although it was the first time
+          using
+          <a href="https://elementor.com/" target="_blank" rel="noreferrer"
+            >Elementor</a
+          >. With my previous knowledge of web design, transferring my skills to
+          Elementor was not very difficult. Even with the tight deadline, the
+          abundance of widgets to choose from has accelerated the implementation
+          process.
+        </p>
+        <figure class="my-4 justify-content-center text-center">
+          <a
+            class="btn btn-warning"
+            target="_blank"
+            href="../assets/img/Otto_International_Wireframes.pdf"
+            role="button"
+            >Otto International Wireframes</a
+          >
+        </figure>
+        <h4>Job Opening</h4>
+        <p>
+          To fulfill the requirement of a place for potential hiring candidates
+          to learn more about the company's culture, a careers page has been
+          created which also incorporates a job opening section that works
+          together with the company's LinkedIn. Discussing with the HR
+          stakeholder, we decided to use the plugin
+          <a href="https://wpjobopenings.com/" target="_blank" rel="noreferrer"
+            >WP Job Openings</a
+          >. It contains all the necessary features we needed as well as being
+          developer friendly which helped in creating some custom metadata on
+          the job openings. Since the Career page and job openings section, they
+          have become the most viewed pages after the homepage plus it has also
+          job openings more official as they are hosted on the company website.
+        </p>
+        <figure>
+          <img
+            src="../assets/img/Otto_International_Job_Openings.png"
+            alt="Otto International job openings page"
+            class="border"
+          />
+          <figcaption class="text-center">
+            <small>Otto International Job Openings Page</small>
+          </figcaption>
+        </figure>
+        <h4>SEO</h4>
+        <p>
+          Being the public facing website for Otto International, SEO is
+          important for user acquisition. With the use of
+          <a href="https://rankmath.com/" target="_blank" rel="noreferrer"
+            >Rank Math</a
+          >
+          and integrating it with Google Search Console and Google Analytics, it
+          has made it easy to optimize, customise, and control SEO. All posts
+          and pages are curated with keywords, job openings have been included
+          to the sitemap to be indexed by search engines, and tags have been
+          added to the page's call to action to have a better overview of user
+          engagement. When majority of Direct traffic comes from face-to-face
+          meetings with customers and no follow links from the Intranet, Organic
+          Search comes up as the second-best source of traffic with a 54%
+          difference compared to Direct traffic.
+        </p>
+        <h4>Newsletter</h4>
+        <p>
+          A place for the Communications team to periodically releasing key
+          updates is another important requirement for the public facing
+          website. Making good use of WP's posts, releasing “articles” is the
+          foundation of WP as it was originally built as a blogger website. With
+          Elementor, these posts can follow a template to keep all posts to look
+          the same. With the native feature of posts in WP and Elementor's
+          template feature, we have a newsroom. Now comes the question on how we
+          can let our customers or candidates know of new company updates. As
+          the Communications team already has a subscription to
+          <a href="https://mailchimp.com/" target="_blank" rel="noreferrer"
+            >MailChimp</a
+          >, it has been decided to use MailChimp for monthly newsletters. As
+          every WP site has an RSS feed, we can feed the site's RSS feed to
+          MailChimp to easily fetch the main content and images which is
+          essentially what is needed for any newsletter.
+        </p>
+        <figure class="mx-auto d-block" style="max-width: 600px">
+          <img
+            src="../assets/img/Otto_International_Newsletter.png"
+            alt="Otto International newsletter email"
+            class="border"
+          />
+          <figcaption class="text-center">
+            <small>Otto International Newsletter</small>
+          </figcaption>
+        </figure>
+      </section>
+    </article>
+    <!-- Footer -->
+    <footer class="container-md text-center my-5">
+      <hr class="solid pt-3" />
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/jc-20/"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-linkedin me-4"></i>
+        </a>
+        <a
+          href="mailto:jchan2096@gmail.com"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-envelope-fill me-4"></i>
+        </a>
+        <a
+          href="https://github.com/johnchan215/"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <p class="pt-4">
+        <small> &copy; Made by Johnny Chan </small>
+      </p>
+    </footer>
+    <script src="../js/color-theme.js"></script>
+    <!-- Boostrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
